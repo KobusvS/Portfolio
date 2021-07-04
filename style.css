@@ -59,6 +59,7 @@
 #navbar a:hover {
     transform: skew(20deg);
     letter-spacing: 4px;
+    color: gold;
 }
   
 .content {
@@ -95,14 +96,14 @@
     font-size: 5em;
     font-weight: 800;
     line-height: 1em;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .text h3 {
     font-size: 4em;
     font-weight: 700;
     line-height: 1em;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .text p {
@@ -128,7 +129,8 @@
 
 .text a:hover {
     letter-spacing: 6px;
-
+    border-radius: 15px;
+        
 }
 
 .social {
