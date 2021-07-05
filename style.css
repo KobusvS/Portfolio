@@ -52,15 +52,28 @@
     text-align: center;
     padding: 14px;
     text-decoration: none;
+    font-size: small;
     text-shadow: 5px 5px 10px rgba(0,0,0,0.5), -5px -5px 10px rgba(0,0,0,0.5), 5px 0px 10px rgba(0,0,0,0.5);
     
 }
 
+
 #navbar a:hover {
-    transform: skew(20deg);
-    letter-spacing: 4px;
-    color: gold;
+
+    transform: rotate(360deg);
+    transition: 1.5s;
+    cursor: pointer;
 }
+
+#navbar a.active{
+    border: solid 2px  white;
+    border-radius: 200px;
+    color: white;
+    transform: none;
+    
+    
+}
+
   
 .content {
     padding: 16px;
@@ -133,6 +146,8 @@
 
 }
 
+
+
 .social {
     position: absolute;
     bottom: 20px;
@@ -158,31 +173,6 @@
     transform: scale(1.5) translateY(-15px);
 }
 
-.menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu ul {
-    position: relative;
-    list-style: none;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    font-size: 24px;
-    color: black;
-}
-
-.menu ul li a:hover {
-    color: purple;
-}
 
 @media(max-width: 798px) {
     .showcase,
