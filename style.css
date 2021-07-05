@@ -58,9 +58,9 @@
 
 
 #navbar a:hover {
-
-    transform: rotate(360deg);
-    transition: 1.5s;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    transition: ease-in;
     cursor: pointer;
 }
 
@@ -128,20 +128,28 @@
 
 .text a {
     display: inline-block;
-    font-size: 1 em;
-    background: white;
-    padding: 10px 30px;
+    font-size: 1em;
+    background: none;
+    padding: 10px 25px;
     text-decoration: none;
-    color: black;
+    color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: 0.2s;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50px;
+    justify-content: space-between;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.5), -5px -5px 10px rgba(0,0,0,0.5), 5px 0px 10px rgba(0,0,0,0.5);
+    margin: 10px;
 
 }
 
 .text a:hover {
-    letter-spacing: 6px;
-    border-radius: 20px;
+
+    
+    border-radius: 50px;
+    background: white;
+    color: black;
 
 }
 
