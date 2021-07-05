@@ -7,6 +7,56 @@
     font-family: 'Noto-Sans_JP', sans-serif;
 }
 
+.spinner {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    
+    -webkit-animation: sk-rotate 2.0s infinite linear;
+    animation: sk-rotate 2.0s infinite linear;
+  }
+  
+  .dot1, .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #333;
+    border-radius: 100%;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+  @keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
 
 .showcase {
     position: absolute;
@@ -33,7 +83,7 @@
     left: 0;
     width: 100%;
     padding: 40px 100px;
-    z-index: 1000;
+    z-index: 50;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,15 +102,28 @@
     text-align: center;
     padding: 14px;
     text-decoration: none;
+    font-size: small;
     text-shadow: 5px 5px 10px rgba(0,0,0,0.5), -5px -5px 10px rgba(0,0,0,0.5), 5px 0px 10px rgba(0,0,0,0.5);
     
 }
 
+
 #navbar a:hover {
-    transform: skew(20deg);
-    letter-spacing: 4px;
-    color: gold;
+
+    transform: rotate(360deg);
+    transition: 1.5s;
+    cursor: pointer;
 }
+
+#navbar a.active{
+    border: solid 2px  white;
+    border-radius: 200px;
+    color: white;
+    transform: none;
+
+    
+}
+
   
 .content {
     padding: 16px;
@@ -133,6 +196,8 @@
 
 }
 
+
+
 .social {
     position: absolute;
     bottom: 20px;
@@ -158,31 +223,7 @@
     transform: scale(1.5) translateY(-15px);
 }
 
-.menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.menu ul {
-    position: relative;
-    list-style: none;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    font-size: 24px;
-    color: black;
-}
-
-.menu ul li a:hover {
-    color: purple;
-}
 
 @media(max-width: 798px) {
     .showcase,
