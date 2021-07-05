@@ -1,15 +1,19 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://kobus0966@dev.azure.com/kobus0966/Portfolio/_git/Portfolio"
+    "url": "git+https://github.com/KobusvS/Portfolio.git"
   },
-  "author": "Kobus van Staden",
+  "author": "",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/KobusvS/Portfolio/issues"
+  },
+  "homepage": "https://github.com/KobusvS/Portfolio#readme"
 }
